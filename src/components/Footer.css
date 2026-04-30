@@ -1,0 +1,11 @@
+/* ── Footer.css ── */
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.68rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink3);
+}

@@ -1,0 +1,84 @@
+/* ── About.css ── */
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* ── Bio text ── */
+.about__body p {
+  font-size: 0.88rem;
+  color: var(--ink2);
+  line-height: 1.95;
+  margin-bottom: 1rem;
+}
+.about__body strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* ── Highlight cards ── */
+.about__highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 1.2rem;
+}
+.about__highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  transition: border-color 0.3s, background 0.3s;
+}
+.about__highlight:hover {
+  border-color: var(--lineh);
+  background: var(--bg2);
+}
+.about__highlight-icon {
+  color: var(--gold);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.about__highlight-text {
+  font-size: 0.82rem;
+  color: var(--ink2);
+  line-height: 1.6;
+}
+.about__highlight-text strong {
+  display: block;
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 0.85rem;
+  margin-bottom: 2px;
+}
+
+/* ── Stat cards ── */
+.about__stats {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+}
+.about__stat-row {
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+  transition: background 0.3s;
+}
+.about__stat-row:last-child { border-bottom: none; }
+.about__stat-row:hover { background: var(--bg2); }
+.about__stat-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+}
+.about__stat-desc {
+  font-size: 0.74rem;
+  color: var(--ink3);
+  margin-top: 2px;
+}

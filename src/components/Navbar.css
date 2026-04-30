@@ -1,0 +1,56 @@
+/* ── Navbar.css ── */
+
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: rgba(250, 249, 247, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+  animation: fadeDown 0.7s ease both;
+}
+
+.navbar__logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: var(--ink);
+}
+.navbar__logo em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.navbar__links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.navbar__links a {
+  color: var(--ink3);
+  text-decoration: none;
+  font-size: 0.74rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  position: relative;
+}
+.navbar__links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; left: 0;
+  width: 0; height: 1px;
+  background: var(--gold);
+  transition: width 0.3s;
+}
+.navbar__links a:hover {
+  color: var(--gold);
+}
+.navbar__links a:hover::after {
+  width: 100%;
+}

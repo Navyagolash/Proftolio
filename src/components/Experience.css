@@ -1,0 +1,55 @@
+/* ── Experience.css ── */
+
+.exp__entry {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 2.5rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.exp__entry:first-of-type { border-top: 1px solid var(--line); }
+
+.exp__date {
+  font-size: 0.76rem;
+  color: var(--ink3);
+  padding-top: 3px;
+  line-height: 1.6;
+}
+.exp__duration {
+  color: var(--gold);
+}
+
+.exp__role {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.45rem;
+  font-weight: 300;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+.exp__company {
+  font-size: 0.78rem;
+  color: var(--gold);
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+}
+.exp__desc {
+  font-size: 0.85rem;
+  color: var(--ink2);
+  line-height: 1.85;
+}
+
+/* ── Tech chips ── */
+.exp__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.9rem;
+}
+.exp__chip {
+  font-size: 0.68rem;
+  letter-spacing: 0.8px;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--line);
+  color: var(--ink3);
+  border-radius: 1px;
+}

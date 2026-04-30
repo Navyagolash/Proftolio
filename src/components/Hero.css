@@ -1,0 +1,197 @@
+/* ── Hero.css ── */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 5rem 3rem 3rem;
+  position: relative;
+  overflow: hidden;
+  gap: 4rem;
+}
+
+/* Angled background panel on the right */
+.hero::before {
+  content: '';
+  position: absolute;
+  right: 0; top: 0; bottom: 0;
+  width: 42%;
+  background: var(--bg2);
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* ── Left column ── */
+.hero__left {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+  max-width: 560px;
+}
+
+/* ── Right column ── */
+.hero__right {
+  flex: 0 0 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Eyebrow ── */
+.hero__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+  animation: fadeUp 0.9s 0.2s ease both;
+}
+.hero__eyebrow-line {
+  width: 32px;
+  height: 1px;
+  background: var(--gold);
+}
+.hero__eyebrow-text {
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ── Name ── */
+.hero__name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 5.5vw, 5rem);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  animation: fadeUp 0.9s 0.35s ease both;
+}
+.hero__name em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+/* ── Tagline ── */
+.hero__tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--ink2);
+  margin-top: 0.8rem;
+  animation: fadeUp 0.9s 0.5s ease both;
+}
+
+/* ── Description ── */
+.hero__desc {
+  font-size: 0.88rem;
+  color: var(--ink3);
+  line-height: 1.9;
+  margin-top: 0.9rem;
+  max-width: 440px;
+  animation: fadeUp 0.9s 0.65s ease both;
+}
+
+/* ── Typewriter line ── */
+.hero__typed {
+  font-family: monospace;
+  font-size: 0.82rem;
+  color: var(--gold);
+  margin-top: 1rem;
+  min-height: 1.4rem;
+  animation: fadeUp 0.9s 0.75s ease both;
+}
+.hero__cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.9em;
+  background: var(--gold);
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: pulse 1s infinite;
+}
+
+/* ── CTA buttons ── */
+.hero__actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.8rem;
+  flex-wrap: wrap;
+  animation: fadeUp 0.9s 0.85s ease both;
+}
+
+/* ── Profile card ── */
+.hero__card {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 290px;
+  animation: fadeUp 0.9s 0.9s ease both;
+  box-shadow: 0 8px 40px rgba(184, 151, 90, 0.08);
+}
+.hero__card-avatar {
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--bg2), var(--bg3));
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  margin-bottom: 0.9rem;
+}
+.hero__card-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--ink);
+}
+.hero__card-role {
+  font-size: 0.7rem;
+  color: var(--gold);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+.hero__card-divider {
+  height: 1px;
+  background: var(--line);
+  margin: 0.9rem 0;
+}
+.hero__card-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.45rem;
+}
+.hero__card-stat:last-of-type { margin-bottom: 0; }
+.hero__card-stat-label {
+  font-size: 0.72rem;
+  color: var(--ink3);
+}
+.hero__card-stat-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: var(--gold);
+}
+.hero__card-badge {
+  margin-top: 0.9rem;
+  padding: 0.45rem 0.75rem;
+  background: rgba(184, 151, 90, 0.07);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  color: var(--ink2);
+}
+.hero__card-badge-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #4ade80;
+  flex-shrink: 0;
+  animation: pulse 2s infinite;
+}

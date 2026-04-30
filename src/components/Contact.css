@@ -1,0 +1,57 @@
+/* ── Contact.css ── */
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contact__intro p {
+  font-size: 0.88rem;
+  color: var(--ink3);
+  line-height: 1.95;
+  margin-bottom: 0.8rem;
+}
+.contact__cta {
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+/* ── Link cards ── */
+.contact__links {
+  border: 1px solid var(--line);
+}
+.contact__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1.5rem;
+  background: var(--bg);
+  text-decoration: none;
+  color: var(--ink);
+  transition: background 0.3s;
+  border-bottom: 1px solid var(--line);
+}
+.contact__link:last-child { border-bottom: none; }
+.contact__link:hover { background: var(--bg2); }
+.contact__link:hover .contact__arrow { transform: translateX(4px); }
+
+.contact__link-left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.contact__icon { font-size: 0.9rem; }
+.contact__label {
+  font-size: 0.83rem;
+  color: var(--ink2);
+}
+.contact__sub {
+  font-size: 0.72rem;
+  color: var(--ink3);
+}
+.contact__arrow {
+  color: var(--gold);
+  transition: transform 0.3s;
+}
